@@ -683,22 +683,7 @@ socialShareButtons.forEach(function (button) {
     </section><!-- End Menu Section -->
 
 
-<div align="center"class="amazon-product">
-    <a href="https://www.amazon.in/Studynlearn-Interactive-Multitouch-Teaching-Coaching/dp/B0C7499NC7?crid=2GOWOW78098BN&dib=eyJ2IjoiMSJ9.H_6boQ8l_6X2fXR-spVxTW_m2Hli7ob96b_8dyyIrmFlYSCmdHwR-BLCEqU9YkU_jV0yVjlWEHdabokROcZMc5NQQQp2Ekz_93BidlD304TxGMycPFitblbjANC0phzWZLhYwGtmw5EB7m5-z7tjahDvsH5M4ZjxF_0Hp78h2b6GZz_460dFCeNQzPefb1TUrXClqjOnI76YPefgQgyjHuJuRmEJG63Neu25GZAK0gk.wQ2AyNgTHmkCUpik3cSXX1s4hmvxOLkTLorwvQRfPVI&dib_tag=se&keywords=digital%2Bwhite%2Bboard%2Bfor%2Bteaching&qid=1724052870&sprefix=digital%2Bwhite%2Caps%2C1052&sr=8-3&th=1&linkCode=ll1&tag=kwagawebdev-21&linkId=4d98245ea4baa81d0469b79d7c1c6c79&language=en_IN&ref_=as_li_ss_tl" target="_blank">
-        <img id="productImage" src="https://m.media-amazon.com/images/I/51Py6TCP25L._SL220_.jpg" alt="Amazing Product" />
-        <h5>Studynlearn 55 Inch Ultra 4K HD </h5>
-        <br />
-        Buy Now on Amazon
-    </a>
-</div>
 
-<script>
-    window.onload = function() {
-        setTimeout(function() {
-            document.getElementById('productImage').classList.add('fade-in');
-        }, 10); // Starts the animation immediately
-    }
-</script>
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -1582,18 +1567,70 @@ iframe.goog-te-menu-frame {
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://company.kwaga.ltd/portfolio.html">KwagaWebDev</a>
-      </div>
+
+    <footer align="center"class="footer">
+        <div class="footer-buttons">
+            <a href="#header"><button type="button" class="btn btn-info btn-sm">Home</button></a>
+             <a href="#about"><button type="button" class="btn btn-secondary btn-sm">About</button></a>
+               <a href="#why-us"><button type="button" class="btn btn-warning btn-sm">Why Choose</button></a>
+             <a href="#menu"><button type="button" class="btn btn-danger btn-sm">Our Menu</button></a>
+          <a href="#events"><button type="button" class="btn btn-info btn-sm">Events</button></a>
+             <a href="#chefs"><button type="button" class="btn btn-success btn-sm">Chefs</button></a>
+<a href="#gallery"><button type="button" class="btn btn-light btn-sm">Gallery</button></a>
+<a href="#contact"><button type="button" class="btn btn-info btn-sm">Review</button></a>
+             <a href="#book-a-table"><button type="button" class="btn btn-secondary btn-sm">Book a Table</button></a>
+        </div>
+
+
+
+<!-- Don't forget to include Font Awesome in your HTML -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <div class="contact-info" style="text-align: right; margin-right: 30px;">
+  <div>
+    <b>Contact:</b> +91 12345 67890 <span style="margin-left: 20px;"><b>Email:</b> <a href="mailto:contact@yummy.com">contact@yummy.com</a></span>
+</div>
+</div>
+<style>
+        .copyright {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+        }
+        .copyright span {
+            display: inline-block;
+            margin-left: 50px;
+            color: #333;
+            font-size: 14px;
+        }
+        .copyright strong span {
+            color: #007bff; /* Change this to your preferred color */
+        }
+    </style>
+<div class="copyright">
+        <span>&copy; Copyright <strong><span id="yearSpan"></span> Home Tuition</strong>. All Rights Reserved</span>
     </div>
+<div class="credits">
+        <span>Powered By <a href="https://company.kwaga.ltd/"><span class="badge bg-primary">KwagaWebDev</span></a></span>
+    </div>
+<script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        // Calculate the next year
+        const nextYear = currentYear + 1;
+        // Set the text in the span
+        document.getElementById('yearSpan').textContent = `${currentYear}-${nextYear}`;
+    </script>
+   
+<div align="left"class="contact-info">	
+<button type="button" style="margin-left: 10px; class="btn btn-primary">
+ <h5><span class="badge bg-primary">K</span> <span class="badge bg-secondary">W</span><span class="badge bg-danger">D</span><span class="badge bg-success">4.7</span>
+<span class="badge bg-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+
+</h5>
+
+</button>
 
   </footer><!-- End Footer -->
 
