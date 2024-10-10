@@ -42,39 +42,182 @@
 <body>
 
   <!-- ======= Header ======= -->
-<header id="header" class="header fixed-top d-flex align-items-center">
-  <div class="container d-flex align-items-center justify-content-between">
-
-    <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+<section class="row align-items-center py-1 px-xl-2" >
+     <div class="col-lg-3">
+       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
       <h1>Yummy<span>.</span></h1>
     </a>
 
-    <nav id="navbar" class="navbar">
-      <ul class="d-flex align-items-center">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#events">Events</a></li>
 
-        <!-- Add logo image between Events and Chefs -->
-        <li class="logo-item d-flex align-items-center">
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXa6UCYUDocsMpnt5n4u7NLNg3QUFtpEvJfyL8mYu-ChFr9SxMLMszqMGeeC_mof-JI135kgRo5fcHYOBt_9fGCvwRrmnKlsszM9RRWG_QusQ6i-PANa2cRBGODHLTN9-iXxHSD6Q8wuEOuiiC24IogoLk37CCBN4M_7FlVTl9Z4SftacWqtZ65IRQuLSp/s1600/restra-removebg-preview.png" 
+    </div>
+<div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+   
+
+    <a href="https://www.google.com/maps?q=123+Street,+New+York,+USA" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="d-inline-flex align-items-center">
+            <i class="fas fa-location-dot"></i>
+            <div class="text-left ml-2">
+                <span class="badge bg-secondary">123 Street, Delhi</span>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+<div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+    <a href="mailto:service@water.com" style="text-decoration: none; color: inherit;">
+        <div class="d-inline-flex align-items-center">
+            <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
+            <div class="text-left">
+                <span class="badge bg-danger">service@restra.com</span>
+            </div>
+        </div>
+    </a>
+
+    <div class="d-inline-flex align-items-center">
+        <i class="fa fa-2x fa-phone text-primary mr-3"></i>
+        <div class="text-left">
+            <span class="badge bg-success">+91 34578 67895</span>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+  <!-- ***** Header Area Start ***** -->
+<nav class="navbar">
+  <div class="container">
+    <!-- Logo -->
+   
+    <a href="" class="text-decoration-none">
+                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXa6UCYUDocsMpnt5n4u7NLNg3QUFtpEvJfyL8mYu-ChFr9SxMLMszqMGeeC_mof-JI135kgRo5fcHYOBt_9fGCvwRrmnKlsszM9RRWG_QusQ6i-PANa2cRBGODHLTN9-iXxHSD6Q8wuEOuiiC24IogoLk37CCBN4M_7FlVTl9Z4SftacWqtZ65IRQuLSp/s1600/restra-removebg-preview.png" 
                alt="Logo" class="nav-logo" style="height: 40px; margin: 0 10px;">
-        </li>
+            </a>
+    <!-- Mobile menu toggle button (three bars) -->
+    <button id="navbar-toggle" class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon">&#9776;</span> <!-- Unicode for hamburger icon -->
+    </button>
 
-        <li><a href="#chefs">Chefs</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#ClientReviews">Review</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <!-- Navbar links -->
+    <div id="navbar-menu" class="navbar-collapse">
+      <ul class="navbar-nav" align="center">
+       
+
+<div align= "justify-content-center"class="btn-group" role="group" aria-label="Basic mixed styles example">
+   <li class="nav-item"><a class="nav-link" href="#home"> <button type="button" class="btn-sm btn-danger">Home</button></a></li>
+<li class="nav-item"><a class="nav-link" href="#about-us"><button type="button" class="btn-sm btn-primary">About </button></a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery"> <button type="button" class="btn-sm btn-info">Gallery</button></a></li></div>
+                      
+<div align= "justify-content-center"class="btn-group" role="group" aria-label="Basic mixed styles example">
+  
+<li class="nav-item"><a class="nav-link" href="#courses"><button type="button" class="btn-sm btn-success">We Accomodate</button></a></li>
+<li class="nav-item"><a class="nav-link" href="#review"><button type="button" class="btn-sm btn-dark">Reviews</button></a></li>
+<li class="nav-item"><a class="nav-link" href="#contact"><button type="button" class="btn-sm btn-light">Contact</button></a></li>
+</div>
+
+
+
       </ul>
-    </nav><!-- .navbar -->
-
-    <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
-
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
   </div>
-</header>
+</nav>
+
+
+<style>
+  .navbar {
+  background-color: #f8f9fa; /* Light background for the navbar */
+}
+
+.nav-item {
+  margin: 5px; /* Adds space between buttons */
+}
+
+.navbar-toggler {
+  border: none; /* Removes default border from toggle button */
+}
+
+   .btn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px; /* Adjust the gap here */
+        }
+
+        .btn:last-child {
+            margin-right: 0; /* Remove margin for the last button */
+        }
+/* Basic Navbar styling */
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  display: none; /* Hidden by default */
+  flex-direction: row; /* Ensure items are in a row */
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display menu items horizontally */
+  flex-direction: row; /* Ensure items are arranged in a row */
+  gap: 1rem; /* Space between items */
+}
+
+.navbar-nav .nav-item {
+  margin: 0;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem; /* Add some padding to menu items */
+}
+
+/* Show menu when open */
+.navbar-collapse.show {
+  display: flex; /* Ensure it's displayed as flexbox */
+  justify-content: center; /* Center the items */
+  flex-direction: row; /* Ensure horizontal display */
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    display: flex; /* Keep it horizontal for larger screens */
+    justify-content: flex-end; /* Align to the right */
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+</style>
+<script>
+// JavaScript for toggling menu visibility
+document.getElementById('navbar-toggle').addEventListener('click', function() {
+  const navbarMenu = document.getElementById('navbar-menu');
+  
+  // Toggle the "show" class on the menu to display/hide it
+  navbarMenu.classList.toggle('show');
+});
+
+</script>
 
 <!-- Mobile Responsive Styles -->
 <style>
