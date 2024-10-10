@@ -89,18 +89,45 @@
 
   <!-- ***** Header Area Start ***** -->
 <nav id="navbar" class="navbar">
-            <a href="#header"><button type="button" class="btn btn-info btn-sm">Home</button></a>
-             <a href="#about"><button type="button" class="btn btn-secondary btn-sm">About</button></a>
-               <a href="#why-us"><button type="button" class="btn btn-warning btn-sm">Why Choose</button></a>
-             <a href="#menu"><button type="button" class="btn btn-danger btn-sm">Our Menu</button></a>
-          <a href="#events"><button type="button" class="btn btn-info btn-sm">Events</button></a>
-             <a href="#chefs"><button type="button" class="btn btn-success btn-sm">Chefs</button></a>
-<a href="#gallery"><button type="button" class="btn btn-light btn-sm">Gallery</button></a>
-<a href="#ClientReviews"><button type="button" class="btn btn-info btn-sm">Review</button></a>
-             <a href="#book-a-table"><button type="button" class="btn btn-secondary btn-sm">Book a Table</button></a>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
+  <!-- Hamburger Icon (three-bar menu) -->
+  <div class="mobile-nav-toggle">
+    <i class="bi bi-list"></i> <!-- Bootstrap Icons used for the three-bar icon -->
+  </div>
 
+  <!-- Navigation buttons -->
+  <a href="#header" class="btn btn-info btn-sm">Home</a>
+  <a href="#about" class="btn btn-secondary btn-sm">About</a>
+  <a href="#why-us" class="btn btn-warning btn-sm">Why Choose</a>
+  <a href="#menu" class="btn btn-danger btn-sm">Our Menu</a>
+  <a href="#events" class="btn btn-info btn-sm">Events</a>
+  <a href="#chefs" class="btn btn-success btn-sm">Chefs</a>
+  <a href="#gallery" class="btn btn-light btn-sm">Gallery</a>
+  <a href="#ClientReviews" class="btn btn-info btn-sm">Review</a>
+  <a href="#book-a-table" class="btn btn-secondary btn-sm">Book a Table</a>
+</nav>
+<style>
+/* Hide the buttons by default on smaller screens */
+@media (max-width: 768px) {
+  .navbar a {
+    display: none;
+  }
+
+  .navbar .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Show the buttons when the mobile-nav-toggle is clicked (you can use JS to add/remove this class) */
+.navbar.show-menu a {
+  display: block;
+}
+</style>
+<script>
+document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+  document.getElementById('navbar').classList.toggle('show-menu');
+});
+</script>
 <style>
 .social-share {
   position: fixed;
