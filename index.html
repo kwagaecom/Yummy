@@ -88,107 +88,19 @@
 
 
   <!-- ***** Header Area Start ***** -->
-<header id="header" class="fixed-top">
-    <section class="container d-flex align-items-center">
-        <!---<h1 class="logo me-auto"><a href="index.html">School</a></h1>---->
-        <nav id="navbar" class="navbar">
-            <ul>
-                 <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-                <li><a class="nav-link scrollto" href="#events">Events</a></li>
-                <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-               
+<nav id="navbar" class="navbar">
+            <a href="#header"><button type="button" class="btn btn-info btn-sm">Home</button></a>
+             <a href="#about"><button type="button" class="btn btn-secondary btn-sm">About</button></a>
+               <a href="#why-us"><button type="button" class="btn btn-warning btn-sm">Why Choose</button></a>
+             <a href="#menu"><button type="button" class="btn btn-danger btn-sm">Our Menu</button></a>
+          <a href="#events"><button type="button" class="btn btn-info btn-sm">Events</button></a>
+             <a href="#chefs"><button type="button" class="btn btn-success btn-sm">Chefs</button></a>
+<a href="#gallery"><button type="button" class="btn btn-light btn-sm">Gallery</button></a>
+<a href="#ClientReviews"><button type="button" class="btn btn-info btn-sm">Review</button></a>
+             <a href="#book-a-table"><button type="button" class="btn btn-secondary btn-sm">Book a Table</button></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
 
-                <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
-                <li><a class="nav-link scrollto" href="#ClientReviews">Review</a></li>
-               
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-               
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-    </section>
-</header>
-
-<!-- Mobile Responsive Styles -->
-<style>
-  /* Hide the logo image in mobile view */
-  @media (max-width: 767px) {
-    .logo-item {
-      display: none;
-    }
-    .navbar ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  /* Adjustments for smaller screens */
-  @media (max-width: 575px) {
-    .nav-logo {
-      height: 30px; /* Make the logo smaller on extra small screens */
-    }
-    .btn-book-a-table {
-      padding: 5px 10px; /* Reduce button padding */
-    }
-  }
-
-  /* Mobile menu toggle */
-  .mobile-nav-toggle {
-    display: none;
-  }
-
-  @media (max-width: 991px) {
-    .mobile-nav-toggle {
-      display: block;
-    }
-
-    .navbar {
-      display: none;
-    }
-
-    .mobile-nav-show {
-      display: inline;
-    }
-
-    .mobile-nav-hide {
-      display: none;
-    }
-
-    .navbar.active {
-      display: block;
-    }
-  }
-</style>
-
-<!-- Script to handle the mobile toggle -->
-<script>
-  document.querySelector('.mobile-nav-show').addEventListener('click', function() {
-    document.getElementById('navbar').classList.add('active');
-    document.querySelector('.mobile-nav-show').classList.add('d-none');
-    document.querySelector('.mobile-nav-hide').classList.remove('d-none');
-  });
-
-  document.querySelector('.mobile-nav-hide').addEventListener('click', function() {
-    document.getElementById('navbar').classList.remove('active');
-    document.querySelector('.mobile-nav-show').classList.remove('d-none');
-    document.querySelector('.mobile-nav-hide').classList.add('d-none');
-  });
-</script>
-
-<style>
-/* Style for the logo between Events and Chefs */
-.nav-logo {
-  height: 40px;
-  margin: 0 20px;
-}
-
-.logo-item {
-  display: flex;
-  align-items: center;
-}
-</style>
 <style>
 .social-share {
   position: fixed;
