@@ -42,7 +42,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+<header id="header" class="header fixed-top d-flex align-items-center">
   <div class="container d-flex align-items-center justify-content-between">
 
     <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
@@ -50,15 +50,16 @@
     </a>
 
     <nav id="navbar" class="navbar">
-      <ul>
+      <ul class="d-flex align-items-center">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#events">Events</a></li>
 
         <!-- Add logo image between Events and Chefs -->
-        <li class="logo-item">
-          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXa6UCYUDocsMpnt5n4u7NLNg3QUFtpEvJfyL8mYu-ChFr9SxMLMszqMGeeC_mof-JI135kgRo5fcHYOBt_9fGCvwRrmnKlsszM9RRWG_QusQ6i-PANa2cRBGODHLTN9-iXxHSD6Q8wuEOuiiC24IogoLk37CCBN4M_7FlVTl9Z4SftacWqtZ65IRQuLSp/s1600/restra-removebg-preview.png" alt="Logo" class="nav-logo">
+        <li class="logo-item d-flex align-items-center">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXa6UCYUDocsMpnt5n4u7NLNg3QUFtpEvJfyL8mYu-ChFr9SxMLMszqMGeeC_mof-JI135kgRo5fcHYOBt_9fGCvwRrmnKlsszM9RRWG_QusQ6i-PANa2cRBGODHLTN9-iXxHSD6Q8wuEOuiiC24IogoLk37CCBN4M_7FlVTl9Z4SftacWqtZ65IRQuLSp/s1600/restra-removebg-preview.png" 
+               alt="Logo" class="nav-logo" style="height: 40px; margin: 0 10px;">
         </li>
 
         <li><a href="#chefs">Chefs</a></li>
@@ -74,6 +75,73 @@
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
   </div>
 </header>
+
+<!-- Mobile Responsive Styles -->
+<style>
+  /* Hide the logo image in mobile view */
+  @media (max-width: 767px) {
+    .logo-item {
+      display: none;
+    }
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Adjustments for smaller screens */
+  @media (max-width: 575px) {
+    .nav-logo {
+      height: 30px; /* Make the logo smaller on extra small screens */
+    }
+    .btn-book-a-table {
+      padding: 5px 10px; /* Reduce button padding */
+    }
+  }
+
+  /* Mobile menu toggle */
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .mobile-nav-show {
+      display: inline;
+    }
+
+    .mobile-nav-hide {
+      display: none;
+    }
+
+    .navbar.active {
+      display: block;
+    }
+  }
+</style>
+
+<!-- Script to handle the mobile toggle -->
+<script>
+  document.querySelector('.mobile-nav-show').addEventListener('click', function() {
+    document.getElementById('navbar').classList.add('active');
+    document.querySelector('.mobile-nav-show').classList.add('d-none');
+    document.querySelector('.mobile-nav-hide').classList.remove('d-none');
+  });
+
+  document.querySelector('.mobile-nav-hide').addEventListener('click', function() {
+    document.getElementById('navbar').classList.remove('active');
+    document.querySelector('.mobile-nav-show').classList.remove('d-none');
+    document.querySelector('.mobile-nav-hide').classList.add('d-none');
+  });
+</script>
+
 <style>
 /* Style for the logo between Events and Chefs */
 .nav-logo {
