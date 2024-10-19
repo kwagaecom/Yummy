@@ -42,92 +42,50 @@
 <body>
 
   <!-- ======= Header ======= -->
-<section class="row align-items-center py-1 px-xl-2" >
-     <div class="col-lg-3">
-      <a href="" class="text-decoration-none">
-                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXa6UCYUDocsMpnt5n4u7NLNg3QUFtpEvJfyL8mYu-ChFr9SxMLMszqMGeeC_mof-JI135kgRo5fcHYOBt_9fGCvwRrmnKlsszM9RRWG_QusQ6i-PANa2cRBGODHLTN9-iXxHSD6Q8wuEOuiiC24IogoLk37CCBN4M_7FlVTl9Z4SftacWqtZ65IRQuLSp/s5000/restra-removebg-preview.png" 
-               alt="Logo" class="nav-logo" style="height: 40px; margin: 0 10px;">
-            </a>
+  <header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
 
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+      <h1>Yummy<span>.</span></h1>
+    </a>
 
-    </div>
-<div class="row">
-    <div class="d-flex justify-content-between align-items-center">
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#events">Events</a></li>
+
+        <!-- Add logo image between Events and Chefs -->
+        <li class="logo-item">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXa6UCYUDocsMpnt5n4u7NLNg3QUFtpEvJfyL8mYu-ChFr9SxMLMszqMGeeC_mof-JI135kgRo5fcHYOBt_9fGCvwRrmnKlsszM9RRWG_QusQ6i-PANa2cRBGODHLTN9-iXxHSD6Q8wuEOuiiC24IogoLk37CCBN4M_7FlVTl9Z4SftacWqtZ65IRQuLSp/s1600/restra-removebg-preview.png" alt="Logo" class="nav-logo">
+        </li>
+
+        <li><a href="#chefs">Chefs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#ClientReviews">Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav><!-- .navbar -->
+
    
 
-    <a href="https://www.google.com/maps?q=123+Street,+New+York,+USA" target="_blank" style="text-decoration: none; color: inherit;">
-        <div class="d-inline-flex align-items-center">
-            <i class="fas fa-location-dot"></i>
-            <div class="text-left ml-2">
-                <span class="badge bg-secondary">123 Street, Delhi</span>
-            </div>
-        </div>
-    </a>
-</div>
-</div>
-<div class="row">
-    <div class="d-flex justify-content-between align-items-center">
-    <a href="mailto:service@water.com" style="text-decoration: none; color: inherit;">
-        <div class="d-inline-flex align-items-center">
-            <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
-            <div class="text-left">
-                <span class="badge bg-danger">service@restra.com</span>
-            </div>
-        </div>
-    </a>
-
-    <div class="d-inline-flex align-items-center">
-        <i class="fa fa-2x fa-phone text-primary mr-3"></i>
-        <div class="text-left">
-            <span class="badge bg-success">+91 34578 67895</span>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-
-
-  <!-- ***** Header Area Start ***** -->
-<nav id="navbar" class="navbar">
-  <!-- Hamburger Icon (three-bar menu) -->
-  <div class="mobile-nav-toggle">
-    <i class="bi bi-list"></i> <!-- Bootstrap Icons used for the three-bar icon -->
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
   </div>
-
-  <!-- Navigation buttons -->
-  <a href="#header" class="btn btn-info btn-sm">Home</a>
-  <a href="#about" class="btn btn-secondary btn-sm">About</a>
-  <a href="#why-us" class="btn btn-warning btn-sm">Why Choose</a>
-  <a href="#menu" class="btn btn-danger btn-sm">Our Menu</a>
-  <a href="#events" class="btn btn-info btn-sm">Events</a>
-  <a href="#chefs" class="btn btn-success btn-sm">Chefs</a>
-  <a href="#gallery" class="btn btn-light btn-sm">Gallery</a>
-  <a href="#ClientReviews" class="btn btn-info btn-sm">Review</a>
-  <a href="#book-a-table" class="btn btn-secondary btn-sm">Book a Table</a>
-</nav>
+</header>
 <style>
-/* Hide the buttons by default on smaller screens */
-@media (max-width: 768px) {
-  .navbar a {
-    display: none;
-  }
-
-  .navbar .mobile-nav-toggle {
-    display: block;
-    cursor: pointer;
-  }
+/* Style for the logo between Events and Chefs */
+.nav-logo {
+  height: 40px;
+  margin: 0 20px;
 }
 
-/* Show the buttons when the mobile-nav-toggle is clicked (you can use JS to add/remove this class) */
-.navbar.show-menu a {
-  display: block;
+.logo-item {
+  display: flex;
+  align-items: center;
 }
 </style>
-<script>
-document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
-  document.getElementById('navbar').classList.toggle('show-menu');
-});
-</script>
 <style>
 .social-share {
   position: fixed;
@@ -294,14 +252,14 @@ socialShareButtons.forEach(function (button) {
       <img src="https://images.unsplash.com/photo-1649082236294-94468ba45741?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMG91dHNpZGV8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="...">
 <div style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
     <h5>YUMMY RESTRA</h5>
-   
+    <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
   </div>
     </div>
     <div class="carousel-item">
       <img src="https://plus.unsplash.com/premium_photo-1670984940360-434bd0d239e8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
     <div style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
     <h5>LOUNGE AREA</h5>
-   
+    <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
   </div>
 </div>
   
