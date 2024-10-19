@@ -42,155 +42,68 @@
 <body>
 
   <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-
-
-
-
-    <header>
-        <div class="logo">My Website</div>
-        <nav class="desktop-nav">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Yummy<span>.</span></h1>
+<h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+      </a>
+<a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+<h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+      </a>
+<a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+<h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+      </a>
+<a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+<h5><a href="#hero"><button type="button" class="btn btn-primary btn-sm">Home</button></a></h5>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+         <!--- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Contact</a></li>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
             </ul>
-        </nav>
+          </li>--->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
 
-        <!-- Hamburger for Mobile -->
-        <div class="mobile-menu-icon" onclick="openSidebar()">
-            &#9776;
-        </div>
+      <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-        <!-- Sidebar for Mobile -->
-        <div id="mobileSidebar" class="mobile-sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#about">About</a>
-            <a href="#">Contact</a>
-        </div>
-    </header>
-
-    <script src="scripts.js">
-        // Open sidebar
-function openSidebar() {
-    document.getElementById("mobileSidebar").style.width = "250px";
-}
-
-// Close sidebar
-function closeSidebar() {
-    document.getElementById("mobileSidebar").style.width = "0";
-}
-
-// Close sidebar when any link is clicked
-document.querySelectorAll('.mobile-sidebar a').forEach(link => {
-    link.addEventListener('click', closeSidebar);
-});
-
-    </script>
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.desktop-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.desktop-nav ul li {
-    margin-left: 20px;
-}
-
-.desktop-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.desktop-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-/* Mobile menu icon */
-.mobile-menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-/* Sidebar */
-.mobile-sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-    z-index: 1000;
-}
-
-.mobile-sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.mobile-sidebar a:hover {
-    background-color: #575757;
-}
-
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .desktop-nav {
-        display: none;
-    }
-
-    .mobile-menu-icon {
-        display: block;
-    }
-}
-</style>
-
+    </div>
+  </header><!-- End Header -->
 <style>
 .social-share {
   position: fixed;
@@ -355,18 +268,16 @@ socialShareButtons.forEach(function (button) {
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="https://images.unsplash.com/photo-1649082236294-94468ba45741?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMG91dHNpZGV8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="...">
- <a class="btn-book-a-table" href="#book-a-table">Book a Table</a>
 <div style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
     <h5>YUMMY RESTRA</h5>
-    
+   
   </div>
     </div>
     <div class="carousel-item">
       <img src="https://plus.unsplash.com/premium_photo-1670984940360-434bd0d239e8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-    
-<div style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+    <div style="position: absolute; top: 10%; left: 50%; transform: translate(-50%, -50%); color: white; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
     <h5>LOUNGE AREA</h5>
-    
+   
   </div>
 </div>
   
@@ -377,7 +288,7 @@ socialShareButtons.forEach(function (button) {
           <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
           <p data-aos="fade-up" data-aos-delay="100">Every bite is a symphony of flavors that dances on your taste buds</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            
+            <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
             <a href="https://www.youtube.com/watch?v=xf-gLOHqEQQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
@@ -793,143 +704,119 @@ socialShareButtons.forEach(function (button) {
 
 
     <!-- ======= Testimonials Section ======= -->
- <style>
-#ClientReviews {
-  max-width: 800px;
-  margin: 40px auto;
-}
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
 
-.ClientReview_Card {
-  background-color: #fff8f0;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  padding: 25px;
-  font-family: 'Georgia', serif;
-}
-
-.ClientReview_Top {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.ClientReview_Pfp img {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  margin-right: 20px;
-  border: 3px solid #ff7f50;
-}
-
-.ClientReview_Stars {
-  color: #ffa500; /* Orange color for the stars */
-  font-size: 22px;
-}
-
-.ClientReview_Body {
-  font-style: italic;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.ClientReview_Name {
-  font-weight: bold;
-  color: #444;
-  margin-bottom: 20px;
-}
-
-.ClientReview_Img img {
-  max-width: 120px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-</style>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<section id="ClientReviews" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <!-- First Review -->
-    <div class="carousel-item active">
-      <div class="ClientReview_Card">
-        <div class="ClientReview_Top">
-          <div class="ClientReview_Pfp">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVJ_jDRiVlgv_ui3fOqcc5JU7fY3lncqpzQSvZyGURM00oqOMi28w=w90-h90-p-rp-mo-ba5-br100" />
-          </div>
-          <div class="ClientReview_Stars">
-            ★★★★★
-          </div>
-        </div>
-        <div class="ClientReview_Body">
-          "The food was absolutely delicious! The ambiance was warm and inviting, making it the perfect place for a family dinner. Highly recommended!"
-        </div>
-        <div class="ClientReview_Name">
-          — John Doe
-        </div>
-       
-      </div>
-    </div>
-
-    <!-- Second Review -->
-    <div class="carousel-item">
-      <div class="ClientReview_Card">
-        <div class="ClientReview_Top">
-          <div class="ClientReview_Pfp">
-            <img src="https://media.istockphoto.com/id/1319103417/photo/inspired-female-teacher-in-headphones-meet-students-online-give-class.webp?a=1&b=1&s=612x612&w=0&k=20&c=oYRBKJLXuDDb59mTRBfyZ9w1w_pJd260Igz1mj6y4R8=" />
-          </div>
-          <div class="ClientReview_Stars">
-            ★★★★☆
-          </div>
-        </div>
-        <div class="ClientReview_Body">
-          "Great service and wonderful food. The flavors were authentic, and the staff was very attentive. Will definitely come back!"
-        </div>
-        <div class="ClientReview_Name">
-          — Jane Smith
-        </div>
+        <div class="section-header">
         
-      </div>
-    </div>
+          <p>look What Our <span>Happy Clients</span> to Say about YUMMY</p>
+        </div>
 
-    <!-- Third Review -->
-    <div class="carousel-item">
-      <div class="ClientReview_Card">
-        <div class="ClientReview_Top">
-          <div class="ClientReview_Pfp">
-            <img src="https://media.istockphoto.com/id/1357947512/photo/a-delighted-african-american-woman-texting-on-her-smartphone-while-walking-through-the-city.webp?a=1&b=1&s=612x612&w=0&k=20&c=t8G0ftI-lWKlGzgUTO0XARBJDlJTY7I4vDiIRv-Nwcg=" />
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Dining at this restaurant was a delightful experience! The food was not only delicious but also beautifully presented. The staff’s warm hospitality made us feel like family
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        This is hands down my favorite spot for a special meal. The ambiance is perfect, the service is impeccable, and the dishes are always fresh and flavorful. I can’t wait to return!</i>
+                      <i class="bi bi-quote quote-icon-left"></i>
+</p>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Every visit to this restaurant has been outstanding. The menu offers a variety of options, and each dish we’ve tried has been a treat. The staff’s attention to detail and genuine friendliness set this place apart
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        We had an amazing time celebrating my birthday here. The food exceeded our expectations, and the personalized service made the evening truly memorable. Highly recommend for any occasion!
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
           </div>
-          <div class="ClientReview_Stars">
-            ★★★★★
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="ClientReview_Body">
-          "Amazing experience! The dishes were cooked to perfection, and the atmosphere was just what we were looking for. Can't wait to return!"
-        </div>
-        <div class="ClientReview_Name">
-          — Sarah Johnson
-        </div>
-       
+
       </div>
-    </div>
-  </div>
-
-  <!-- Carousel Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#ClientReviews" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#ClientReviews" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- End Testimonials Section -->
+    </section><!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
 <style>
@@ -1708,7 +1595,7 @@ iframe.goog-te-menu-frame {
           <a href="#events"><button type="button" class="btn btn-info btn-sm">Events</button></a>
              <a href="#chefs"><button type="button" class="btn btn-success btn-sm">Chefs</button></a>
 <a href="#gallery"><button type="button" class="btn btn-light btn-sm">Gallery</button></a>
-<a href="#ClientReviews"><button type="button" class="btn btn-info btn-sm">Review</button></a>
+<a href="#contact"><button type="button" class="btn btn-info btn-sm">Review</button></a>
              <a href="#book-a-table"><button type="button" class="btn btn-secondary btn-sm">Book a Table</button></a>
         </div>
 
@@ -1740,7 +1627,7 @@ iframe.goog-te-menu-frame {
         }
     </style>
 <div class="copyright">
-        <span>&copy; Copyright <strong><span id="yearSpan"></span> Yummy</strong>. All Rights Reserved</span>
+        <span>&copy; Copyright <strong><span id="yearSpan"></span> Home Tuition</strong>. All Rights Reserved</span>
     </div>
 <div class="credits">
         <span>Powered By <a href="https://company.kwaga.ltd/"><span class="badge bg-primary">KwagaWebDev</span></a></span>
